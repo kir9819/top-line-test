@@ -44,10 +44,10 @@ export default {
   props: ['fraction', 'action', 'isAction', 'index', 'isResult'],
   computed: {
     currAction: {
-      get () {
+      get() {
         return this.action;
       },
-      set (v) {
+      set(v) {
         this.setAction({ index: this.index, action: v });
       },
     },
@@ -84,11 +84,7 @@ input:focus {
   margin-left: 5px;
   margin-right: 5px;
 }
-.numerator {
-  display: block;
-  text-align: center;
-}
-.denominator {
+.numerator, .denominator {
   display: block;
   text-align: center;
 }
@@ -96,6 +92,7 @@ input:focus {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 5px;
+  margin-right: 5px;
 }
 .action {
   margin-top: auto;

@@ -34,13 +34,8 @@ export default {
     ...mapState({
       fractions: state => state.calculator.fractions,
       actions: state => state.calculator.actions,
-      result: state => state.calculator.result
+      result: state => state.calculator.result,
     }),
-    currFractions: {
-      get() {
-        return this.fractions;
-      }
-    }
   },
   methods: {
     ...mapActions(['newFraction']),

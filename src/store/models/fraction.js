@@ -51,10 +51,6 @@ export class FractionTask extends Fraction {
 }
 
 export class FractionResult extends Fraction {
-  constructor() {
-    super();
-  }
-
   clear() {
     this.numerator = null;
     this.denominator = null;
